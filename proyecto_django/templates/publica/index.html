@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BairesSteel</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{%static '/publica/css/style.css'%}?v={% now 'U' %}">
+
+
+</head>
+<body>
+    {%include './header.html' %}
+
+<!-- COMIENZO DE LA PRIMERA SECCION O PORTADA -->
+
+<section class="main">
+    <div class="slogan">
+        <p class="intro">Nuestra orientación es hacia la</p>
+        <p class="calidad" id="calidad">CALIDAD</p>
+        <p class="innovacion">INNOVACION</p>
+        <p class="servicio">SERVICIO</p>
+        <p class="lema">A través de los más altos estándares ofrecemos las mejores soluciones del mercado.</p>
+        <div class="enlaces">
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#directivos">Directivos</a></li>
+                <li><a href="#contactenos">Contactenos</a></li>
+            </ul>                   
+        </div>
+    </div>
+    <div class="portada"></div>
+</section>
+
+<section class="productos">
+<p id="productos"></p>
+
+<h3>PRODUCTOS</h3>
+
+<div class="centrado_tarjetas">
+    <div class="contenedor_tarjetas">
+        <div class="tarjeta">
+            <div class="frente vallas">
+                <div class="nombre_tarjeta"><p>VALLAS METALICAS</p></div>        
+            </div>
+            <div class="reverso">
+                <div class="descripcion">
+                    <p><a href="#" target="_blank">Malla de simple torsión</a></p>
+                    <p><a href="#" target="_blank">Malla de triple torsión</a></p>    
+                    <p><a href="#" target="_blank">Malla electrosoldada</a></p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="frente griferia">
+                <div class="nombre_tarjeta"><p>GRIFERIA</p></div>        
+            </div>
+            <div class="reverso">
+                <div class="descripcion">
+                    <p><a href="#" target="_blank">Grifos de repisa</a></p>
+                    <p><a href="#" target="_blank">Grifos empotrados</a></p>
+                    <p><a href="#" target="_blank">Grifos monomando</a></p>
+                    <p><a href="#" target="_blank">Grifos bimando</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="frente industrial">
+                <div class="nombre_tarjeta"><p>INDUSTRIAL</p></div>        
+            </div>
+            <div class="reverso">
+                <div class="descripcion">
+                    <p><a href="#" target="_blank">Tubería de hierro</a></p>
+                    <p><a href="#" target="_blank">Tubería de acero inoxidable</a></p>
+                    <p><a href="#" target="_blank">Tubería de cobre</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="frente buloneria">
+                <div class="nombre_tarjeta"><p>BULONERIA</p></div>        
+            </div>
+            <div class="reverso">
+                <div class="descripcion">
+                    <p><a href="#" target="_blank">Tornillos</a></p>
+                    <p><a href="#" target="_blank">Arandelas</a></p>
+                    <p><a href="#" target="_blank">Tuercas</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="frente chapas">
+                <div class="nombre_tarjeta"><p>CHAPAS</p></div>        
+            </div>
+            <div class="reverso">
+                <div class="descripcion">
+                    <p><a href="#" target="_blank">Acanaladas</a></p>
+                    <p><a href="#" target="_blank">Trapezoidales</a></p>
+                    <p><a href="#" target="_blank">Estampadas</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="frente perfileria">
+                <div class="nombre_tarjeta"><p>PERFILERIA</p></div>        
+            </div>
+            <div class="reverso">
+                <div class="descripcion">
+                    <p><a href="#" target="_blank">Perfil T</a></p>
+                    <p><a href="#" target="_blank">Perfil doble T</a></p>
+                    <p><a href="#" target="_blank">Perfiles no ramificados</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<div class="separador"></div>
+
+<section class="directivos">
+<p id="directivos"></p>
+
+<h3>DIRECTIVOS</h3>
+
+<div class="centrado_tarjetas">
+    <div class="contenedor_tarjetas">
+        <div class="tarjeta_directivo">
+            <img src="{%static 'publica/img/gerente_general.png'%}" alt="">
+            <div class="info">
+                <h4>Martín López</h4>
+                <h5>Gerente General</h5>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="tarjeta_directivo">
+            <img src="{%static 'publica/img/responsable_tecnico.png'%}" alt="">
+            <div class="info">
+                <h4>Pedro González</h4>
+                <h5>Responsable Técnico</h5>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="tarjeta_directivo">
+            <img src="{%static 'publica/img/responsable_administrativo.png'%}" alt="">
+            <div class="info">
+                <h4>María Ríos</h4>
+                <h5>Responsable Administrativa</h5>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<div class="separador"></div>
+
+<section class="contactenos">
+<p id="contactenos"></p>
+<h3>CONTACTENOS</h3>
+
+<div class="centrado_contacto">
+    <div class="formulario">
+        <h4 class="titulo_consulta">REALICE SU CONSULTA</h4>
+        <form id="formulario" action="{%static '/recepcion.html'%}">
+
+            <div class="nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div><br>
+
+            <div class="apellido">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido">
+            </div><br>
+
+            <div class="email">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email">
+            </div><br>
+
+            <div class="comentarios">
+                <label for="area_comentario">Comentarios:</label><br>
+                <textarea name="area_comentario" id="area_comentario" cols="30" rows="10"></textarea><br>
+                <p id="contador_caracteres">Caracteres restantes: 500</p>
+            </div><br>
+
+            <div id="errores_formulario"></div>
+
+            <input id="submit" type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+    <div class="ubicacion">
+
+        <h4>DONDE ESTAMOS</h4>
+        <div class="iframe_mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13133.701213699454!2d-58.36770276089819!3d-34.618691112271485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1649795657587!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+    </div>
+</div>
+
+</section>
+
+<div class="separador"></div>
+
+
+
+<!--  <h1>esto es el cuerpo de la pagina</h1>
+  <p>{{ param_uno }}</p>
+    <p>{{ param_dos }}</p>
+-->
+
+    {%include './footer.html' %}
+</body>
+</html>

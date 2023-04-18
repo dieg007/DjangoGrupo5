@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%static '/publica/css/style.css'%}?v={% now 'U' %}">
+    <link rel="shortcut icon" href="{%static '/publica/img/icono.ico.png'%}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e1e818c959.js" crossorigin="anonymous"></script>
+    <title>Bairesteel</title>
+</head>
+<body>
+
+    {%include './header.html' %}
+
+    <section class="recepcion">
+        <div class="recepcion_mensaje">
+            <h1>GRACIAS POR SU MENSAJE!</h1>
+            <p>Estaremos respondiendo su consulta a la brevedad</p>
+        </div>
+    </section>
+
+    {%include './footer.html' %}
+
+</body>
+</html>
